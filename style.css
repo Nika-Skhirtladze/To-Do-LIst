@@ -1,0 +1,134 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #3F72AF;
+    font-family: "Ubuntu", serif;
+}
+
+section {
+    width: 600px;
+    margin: 60px auto;
+    background-color: #F9F7F7;
+    padding-bottom: 100px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 40px;
+    margin-top: 15px;
+}
+
+form {
+    margin-top: 10px;
+    width: 205px;
+    height: 32px;
+    display: flex;
+}
+
+input {
+    width: 205px;
+    font-size: 12px;
+    padding: 9px 10px;
+    background-color: #DBE2EF;
+    border: 1px solid #B1B1B1;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    outline: none;
+}
+
+button {
+    border: none;
+    background: none;
+    margin-left: -39px;
+    cursor: pointer;
+}
+
+button img {
+    height: 100%;
+    width: 45px;
+    transition: 0.3s;
+    z-index: 1;
+}
+
+button img:hover {
+    filter: contrast(160%);
+    transition: 0.3s;
+}
+
+.line {
+    width: 500px;
+    border-bottom: 1px solid black;
+    margin-top: 15px;
+}
+
+.list {
+    width: 490px;
+}
+
+.todo {
+    width: 100%;
+    height: 55px;
+    background-color: #DBE2EF;
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+    margin-top: 15px;
+    transition: all 0.5s ease;
+}
+
+.todo .text {
+    font-size: 12px;
+    margin-left: 20px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.border {
+    position: absolute;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.check {
+    position: relative;
+    margin-left: 14px;
+    scale: 0;
+    transition: 0.2s;
+    pointer-events: none;
+    /* cursor: pointer; */
+}
+
+.for-hover {
+    display: flex;
+    align-items: center;
+}
+
+.for-hover:hover .check {
+    scale: 1;
+    transition: 0.2s;
+}
+
+.bin {
+    height: 25px;
+    cursor: pointer;
+}
+
+.remove {
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.completed {
+    text-decoration: line-through;
+    background-color: green;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+}
